@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Latitude vs. Humidity</title>
+        <title>Latitude Comparison</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
@@ -19,13 +19,14 @@
                 <span class="navbar-toggler-icon"></span>
             </div>
             <div class="collapse navbar-collapse" id="mainNavBar">
-                <ul class="nav navbar-nav ml-auto">         
+                <ul class="nav navbar-nav ml-auto">                
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                         </div>
@@ -41,48 +42,36 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="padding:50px">
-        <div class="row">
-            <div class="col-md-7 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Latitude vs. Humidity</h2>
-                        <hr>
-                        <div class = "box">
-                            <img class="img-fluid" src="../Resources/assets/images/Fig2.png" alt="Cloudiness"  style="float:left" height ="400" width="800">
-                            <p class="text1">
-                                High humidity occurs in both the southern an northern hemispheres, but not at the poles. 
-                                As expected the highest results occur around the equator.  
-                            </p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Visualisations</h3>
-                        <hr>
-                        <div class ="text-center">
-                            <div>
+    <div class="container" style="padding-top:50px; padding-bottom:50px">
+            <div class="row">
+                <div class="col-lg-12" >
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Comparisons: Latitude vs. X</h2>
+                            <hr>
+                            <h6>Click any plot to get an in-depth analysis.</h6>
+                            <br>
+                            <div class = "text-center">
                                 <a href="temperature.html" >
-                                    <img src="../Resources/assets/images/fig1.png" alt="Temperature" class="img-fluid" height ="175" width="250">
+                                    <img src="../Resources/assets/images/fig1.png" alt="Max Temp" height ="200" width="400" class="img-fluid">
                                 </a>
                                 <a href="humidity.html" >
-                                    <img src="../Resources/assets/images/Fig2.png" alt="Humidity" class="img-fluid" height ="175" width="250">
+                                    <img src="../Resources/assets/images/Fig2.png" alt="Humidity" height ="200" width="400" class="img-fluid">
                                 </a>
                                 <a href="cloudiness.html" >
-                                    <img src="../Resources/assets/images/Fig3.png" alt="Cloudiness" class="img-fluid" height ="175" width="250">
+                                    <img src="../Resources/assets/images/Fig3.png" alt="Cloudiness" height ="200" width="400" class="img-fluid">
                                 </a>
                                 <a href="windspeed.html" >
-                                    <img src="../Resources/assets/images/Fig4.png" alt="Wind Speed" class="img-fluid" height ="175" width="250">
+                                    <img src="../Resources/assets/images/Fig4.png" alt="Wind Speed" height ="200" width="400" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
