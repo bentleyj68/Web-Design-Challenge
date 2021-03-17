@@ -5,44 +5,42 @@
         <title>Latitude Comparison</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #16978F;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../index.html">
-                    <span><h2>Latitude</h2></span>
-                </a>
-            </div>
-            <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="navbar-toggler-icon"></span>
-            </div>
-            <div class="collapse navbar-collapse" id="mainNavBar">
-                <ul class="nav navbar-nav ml-auto">                
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="temperature.html">Temperature</a>
-                            <a class="dropdown-item" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comparison.html">Comparison</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    
+	<nav class="navbar navbar-expand-lg navbar-custom">
+		<a class="navbar-brand" href="../index.html">
+			<span><h2>Latitude</h2></span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">                    
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Plots
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="temperature.html">Temperature</a>
+						<a class="dropdown-item" href="humidity.html">Humidity</a>
+						<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+						<a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="comparison.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="data.html">Data</a>
+				</li>
+			</ul>
+		</div>
     </nav>
 
-    <div class="container" style="padding-top:50px; padding-bottom:50px">
+    <div class="container" style="padding-top:50px; padding-bottom:20px">
             <div class="row">
                 <div class="col-lg-12" >
                     <div class="card">
@@ -52,18 +50,42 @@
                             <h6>Click any plot to get an in-depth analysis.</h6>
                             <br>
                             <div class = "text-center">
-                                <a href="temperature.html" >
-                                    <img src="../Resources/assets/images/fig1.png" alt="Max Temp" height ="200" width="400" class="img-fluid">
-                                </a>
-                                <a href="humidity.html" >
-                                    <img src="../Resources/assets/images/Fig2.png" alt="Humidity" height ="200" width="400" class="img-fluid">
-                                </a>
-                                <a href="cloudiness.html" >
-                                    <img src="../Resources/assets/images/Fig3.png" alt="Cloudiness" height ="200" width="400" class="img-fluid">
-                                </a>
-                                <a href="windspeed.html" >
-                                    <img src="../Resources/assets/images/Fig4.png" alt="Wind Speed" height ="200" width="400" class="img-fluid">
-                                </a>
+								<div class="row">
+									<div class="col">
+									<figure>
+									<figcaption>vs. Temperature</figcaption>
+									<a href="temperature.html" >
+										<img src="../Resources/assets/images/fig1.png" alt="Max Temp" height ="300" width="600" class="img-fluid">
+									</a>
+									</figure>
+									</div>
+									<div class="col">
+									<figure>
+									<figcaption>vs. Humidity</figcaption>
+									<a href="humidity.html" >
+										<img src="../Resources/assets/images/Fig2.png" alt="Humidity" height ="300" width="600" class="img-fluid">
+									</a>
+									</figure>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+									<figure>
+									<figcaption>vs. Cloudiness</figcaption>
+									<a href="cloudiness.html" >
+										<img src="../Resources/assets/images/Fig3.png" alt="Cloudiness" height ="300" width="600" class="img-fluid">
+									</a>
+									</figure>
+									</div>
+									<div class="col">
+									<figure>
+									<figcaption>vs. Wind Speed</figcaption>
+									<a href="windspeed.html" >
+										<img src="../Resources/assets/images/Fig4.png" alt="Wind Speed" height ="300" width="600" class="img-fluid">
+									</a>
+									</figure>
+									</div>
+								</div>
                             </div>
                         </div>
                     </div>
