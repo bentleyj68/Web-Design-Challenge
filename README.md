@@ -2,28 +2,28 @@
 
 ## Background
 
-This repository contains a full web site displaying data and visualisations (graphs).
+This repository contains a full web site, displaying visualisations (graphs) and data on various climate measures by latitude.
 
-Head to index.html as the landing page for the website.
+Head to index.html that will redirect you to the landing page for the website.
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
 The website consists of 7 pages total, including:
 
-* A [landing page](#landing-page) containing:
+* A landing page containing:
   * An explanation of the project.
-  * Links to each visualizations page. 
-* Four [visualization pages](#visualization-pages):
+  * Links to each visualisations page. 
+* Four visualization pages:
   * Max Temperature vs. Latitude
   * Humidity  vs. Latitude
   * Cloudiness  vs. Latitude
   * Wind Speed  vs. Latitude
-* A ["Comparisons" page](#comparisons-page) that:
-  * Contains all of the visualizations on the same page to easily visually compare them.
+* A comparisons page that:
+  * Contains all of the visualisations on the same page to easily visually compare them.
   * Uses a Bootstrap grid for the visualizations.
-  * The grid has two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
-  * Displays a responsive table containing the data used in the visualizations.
-    * The table is a bootstrap table component. [Hint](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables)
-    * The data comes from exporting the `.csv` file as HTML using Python Pandas
+  * The grid has two visualisations across on screens medium and larger, and 1 across on extra-small and small screens.
+* A data page that:
+  * Displays a responsive table containing the data used in the visualisations.
+    * The table is a bootstrap table component. 
+    * The data was extracted from exporting the `.csv` file as HTML using Python Pandas
 
